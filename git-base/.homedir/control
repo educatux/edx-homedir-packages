@@ -1,4 +1,4 @@
-package: git
+package: git-base
 priority: normal
 maintainer: Stéphane GAUTIER <educatux@gmail.com>
 standards-version: 1
