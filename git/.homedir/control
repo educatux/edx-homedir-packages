@@ -2,5 +2,5 @@ package: git
 priority: normal
 maintainer: Stéphane GAUTIER <educatux@gmail.com>
 standards-version: 1
-description: Git configuration
+description: Git configuration for Educatux
  Git configuration for Educatux
