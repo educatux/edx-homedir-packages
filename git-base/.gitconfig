@@ -10,6 +10,7 @@
     br = branch
     rollback = reset HEAD^
     untrack = rm -r --cached
+    glog = log --oneline --decorate
 
 [color]
     branch = auto
