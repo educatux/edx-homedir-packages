@@ -1,7 +1,7 @@
 #! /bin/bash
 
-git config --global user.name "Your Name Comes Here"
-git config --global user.email you@yourdomain.example.com
+git config --global user.name "Stéphane GAUTIER"
+git config --global user.email educatux@gmail.com
 
 git config --global alias.st status
 git config --global alias.ci commit
