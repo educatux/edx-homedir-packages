@@ -3,4 +3,4 @@ priority: normal
 maintainer: Stéphane GAUTIER <educatux@gmail.com>
 standards-version: 1
 description: Git configuration
- Git configuration.
+ Git configuration for Educatux
