@@ -1,0 +1,32 @@
+# simple network top - a top-like console network status tool
+#  robert m love	<rml@tech9.net>
+#  chris m rivera	<cmrivera@ufl.edu>
+#
+# http://sntop.sourceforge.net - homepage
+# ftp://sntop.sourceforge.net/pub/sntop/ - anon ftp
+#
+# 07.20.2000
+#
+# EXAMPLE sntoprc
+
+Frodon
+frodon.educatux.org
+Dell T7400
+
+Galadriel
+galadriel.educatux.org
+DualCore
+
+Celeborn
+celeborn.educatux.org
+Host Server
+
+Gandalf
+gandalf.educatux.org
+Backup Server
+
+Saroumane
+saroumane.educatux.org
+Clarke Teck
+
+# EOF
