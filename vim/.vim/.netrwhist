@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/stephane/.vim'
+let g:netrw_dirhist_2='/srv/repositories/git/github.com/RECIA/nagios_mklivestatus/lib/nagios_mklivestatus'
+let g:netrw_dirhist_3='/srv/repositories/git/github.com/educatux/edx-config/user.configfiles/dot.vim'
+let g:netrw_dirhist_4='/srv/repositories/git/github.com/educatux/edx-config/MyCrunchBangLinux'
