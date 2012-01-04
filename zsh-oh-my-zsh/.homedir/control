@@ -2,5 +2,19 @@ package: zsh-oh-my-zsh
 priority: normal
 maintainer: Stéphane GAUTIER <educatux@gmail.com>
 standards-version: 1
-description: Basic zsh configuration
+depends: zsh-base
+description: zsh configuration with oh-my-zsh
+    https://github.com/educatux/oh-my-zsh
 
+dirs:
+    .oh-my-zsh
+    .oh-my-zsh/custom
+    .oh-my-zsh/lib
+    .oh-my-zsh/log
+    .oh-my-zsh/plugins
+    .oh-my-zsh/templates
+    .oh-my-zsh/themes
+    .oh-my-zsh/tools
+
+mkdirs:
+    .oh-my-zsh
