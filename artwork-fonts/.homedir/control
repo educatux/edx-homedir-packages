@@ -1,0 +1,14 @@
+package: artwork-fonts
+priority: normal
+maintainer: Stéphane GAUTIER <educatux@gmail.com>
+depends:
+standards-version: 1
+description: Fonts
+
+dirs:
+    .fonts
+    .fonts/macfonts
+    .fonts/ubuntu-font-family-0.69+ufl
+
+mkdirs:
+    .fonts
