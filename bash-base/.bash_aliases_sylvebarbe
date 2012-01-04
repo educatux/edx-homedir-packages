@@ -1,0 +1,10 @@
+## Gestion de Xephyr
+# alias sylvebarbe="Xephyr -query sylvebarbe -screen 1920x1200 -keybd ephyr,xkbrules=edev,xkbmodel=pc105,xkbvariant=latin9,xkblayout=fr -ac -dpi 92 :1 -terminate -fullscreen"
+# alias haldir="Xephyr -query haldir -screen 1920x1200 -keybd ephyr,xkbrules=edev,xkbmodel=pc105,xkbvariant=latin9,xkblayout=fr -ac -dpi 92 :1 -terminate -fullscreen"
+
+## DISPLAY=":0.1" mplayer -fs -ao alsa:device=spdif -ac hwac3,hwdts -vo vdpau /srv/shares/Vidéos/XxxX.mkv
+# alias mp="mplayer -fs -ao alsa:device=spdif -ac hwac3,hwdts -vo vdpau"
+
+
+## Icedove Over Lan
+# alias icedove="ssh -X sylvebarbe icedove"

@@ -1,0 +1,20 @@
+## Gestion de Xephyr
+# alias sylvebarbe="Xephyr -query sylvebarbe -screen 1920x1200 -keybd ephyr,xkbrules=edev,xkbmodel=pc105,xkbvariant=latin9,xkblayout=fr -ac -dpi 92 :1 -terminate -fullscreen"
+# alias haldir="Xephyr -query haldir -screen 1920x1200 -keybd ephyr,xkbrules=edev,xkbmodel=pc105,xkbvariant=latin9,xkblayout=fr -ac -dpi 92 :1 -terminate -fullscreen"
+
+## DISPLAY=":0.1" mplayer -fs -ao alsa:device=spdif -ac hwac3,hwdts -vo vdpau /srv/shares/Vidéos/XxxX.mkv
+# alias mp="mplayer -fs -ao alsa:device=spdif -ac hwac3,hwdts -vo vdpau"
+
+
+## Icedove Over Lan
+alias icedove="ssh -X sylvebarbe icedove"
+
+alias adb-devices="sudo schroot -c sid-386 /srv/android-sdk-linux_x86/platform-tools/adb devices"
+
+alias adb-azilink="sudo schroot -c sid-386 /srv/azilink/start-azilink"
+# alias adb-azilink="sudo schroot -c sid-386 /srv/android-sdk-linux_x86/platform-tools/adb forward tcp:41927 tcp:41927"
+alias azilink-ovpn="sudo openvpn /srv/chroot/sid-386/srv/azilink/azilink.ovpn"
+
+alias xconsole="sudo xconsole -file /dev/xconsole"
+
+alias google-chrome="/usr/bin/google-chrome"
