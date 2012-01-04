@@ -5,13 +5,13 @@ grep -E "\.bin" $HOME/.profile 2> /dev/null 2>&1 && exit 0
 cat >> $HOME/.profile <<EOF
 
 # set PATH so it includes user's private .bin if it exists
-if [ -d "$HOME/.bin" ] ; then
-        PATH="$HOME/.bin:$PATH"
+if [ -d "\$HOME/.bin" ] ; then
+        PATH="\$HOME/.bin:\$PATH"
 fi
 EOF
 
 grep -E "\.bin" $HOME/.zshenv 2> /dev/null 2>&1 && exit 0
 
 cat >> $HOME/.zshenv <<EOF
-export PATH="$HOME/.bin:$PATH"
+export PATH="\$HOME/.bin:\$PATH"
 EOF
