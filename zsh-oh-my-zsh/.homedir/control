@@ -7,6 +7,7 @@ description: zsh configuration with oh-my-zsh
     https://github.com/educatux/oh-my-zsh
 
 dirs:
+    .zsh.d
     .oh-my-zsh
     .oh-my-zsh/custom
     .oh-my-zsh/lib
