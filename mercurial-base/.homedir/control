@@ -1,0 +1,6 @@
+package: mercurial-base
+priority: normal
+maintainer: Stéphane GAUTIER <educatux@gmail.com>
+standards-version: 1
+description: Mercurial configuration for Educatux
+ Mercurial configuration for Educatux

@@ -1,0 +1,14 @@
+[ui]
+username = Stéphane GAUTIER <stephane.gautier@recia.fr>
+# debug = true
+# verbose = true
+merge = meld
+editor = vim
+
+# vim: ft=config
+
+[extensions]
+hgext.graphlog =
+hgext.convert=
+hgext.bookmarks=
+# hgext.git =
