@@ -1,0 +1,7 @@
+package: rvm
+priority: normal
+maintainer: Stéphane GAUTIER <educatux@gmail.com>
+standards-version: 1
+depends: zsh-base unison
+description: rvm configuration for Educatux
+ RVM configuration for Educatux
