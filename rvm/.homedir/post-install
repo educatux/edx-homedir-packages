@@ -3,8 +3,8 @@ set -e
 
 PROFILE=rvm
 
-unison -batch -silent $PROFILE || {
-    DELETE=$(unison -batch mcabber 2>&1 | grep Archive | grep selina | grep DELETED | awk '{print $2}')
-    test -n $DELETE && ssh selina rm -f .unison/$DELETE || exit 6
-    unison -batch -silent $PROFILE || exit 7
-}
+# unison -batch -silent $PROFILE || {
+#     DELETE=$(unison -batch mcabber 2>&1 | grep Archive | grep selina | grep DELETED | awk '{print $2}')
+#     test -n $DELETE && ssh selina rm -f .unison/$DELETE || exit 6
+#     unison -batch -silent $PROFILE || exit 7
+# }
