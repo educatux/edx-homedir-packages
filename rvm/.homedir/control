@@ -7,3 +7,6 @@ depends:
     unison
 description: rvm configuration for Educatux
  RVM configuration for Educatux
+
+dirs:
+    .zsh.d
