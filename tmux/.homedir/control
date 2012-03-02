@@ -2,6 +2,7 @@ package: tmux
 priority: normal
 maintainer: Stéphane GAUTIER <educatux@gmail.com>
 depends:
+    zsh-base
 standards-version: 1
 description: tmux configuration files
  tmux is a terminal multiplexer, similar to screen.
