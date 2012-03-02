@@ -8,3 +8,8 @@ description: tmux configuration files
  tmux is a terminal multiplexer, similar to screen.
  .
  This configuration is similar to the screen configuration.
+
+
+dirs:
+    .zsh.d
+
