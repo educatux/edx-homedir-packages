@@ -75,7 +75,7 @@ set textwidth=0
 set bs=2
 
 autocmd BufRead *.aft set fileencoding=ISO-8859-15 noexpandtab
-autocmd BufNewFile,BufRead,BufEnter,BufWrite *.rst set fileencoding=utf8 spell spelllang=fr
+autocmd BufNewFile,BufRead,BufEnter,BufWrite *.rst set fileencoding=utf8 spell spelllang=fr,en
 autocmd BufWritePre * %s/\s\+$//e
 
 " Chargement de PathoGen
@@ -93,6 +93,8 @@ let g:tagbar_usearrows = 1
 
 " let g:SuperTabDefaultCompletionType = "context"
 
+" Plugin - https://github.com/AD7six/vim-activity-log
+let g:activity_log_location = '~/.vim-activity/monthlylogs/%Y/%m.log'
 
 " nnoremap <leader>l :TagbarToggle<CR>
 
