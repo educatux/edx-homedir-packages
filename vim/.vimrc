@@ -21,7 +21,7 @@ set background=dark
 colorscheme xoria256
 "colorscheme evening
 "colorscheme vividchalk
-" colorscheme desert256
+"colorscheme desert256
 
 " Enregistre le fichier en tant que root avec :wr
 cab wr w !sudo tee %
@@ -75,6 +75,7 @@ set textwidth=0
 set bs=2
 
 autocmd BufRead *.aft set fileencoding=ISO-8859-15 noexpandtab
+autocmd BufNewFile,BufRead,BufEnter,BufWrite *.rst set fileencoding=utf8 spell spelllang=fr
 autocmd BufWritePre * %s/\s\+$//e
 
 " Chargement de PathoGen
@@ -132,3 +133,4 @@ set autoread
 set nobackup
 set nowb
 set noswapfile
+
