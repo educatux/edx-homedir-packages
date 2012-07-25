@@ -6,7 +6,10 @@
 #stty echo
 #echo
 #
-read -s -p "Enter Password: " PASSWORD
-echo
-echo $PASSWORD | chsh -s /bin/zsh > /dev/null 2>&1
+
+[[ "$SHELL" = "/bin/zsh" ]] || {
+    read -s -p "Enter Password: " PASSWORD
+    echo
+    echo $PASSWORD | chsh -s /bin/zsh > /dev/null 2>&1
+}
 
