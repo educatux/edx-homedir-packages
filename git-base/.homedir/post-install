@@ -1,15 +1,15 @@
 #! /bin/bash
 
-git config --global user.name "Stéphane GAUTIER"
-git config --global user.email educatux@gmail.com
+git config -f $HOME/.gitconfig --global user.name "Stéphane GAUTIER"
+git config -f $HOME/.gitconfig --global user.email educatux@gmail.com
 
-git config --global alias.st status
-git config --global alias.ci commit
-git config --global alias.co checkout
-git config --global alias.br branch
-git config --global alias.glog 'log --oneline --decorate'
+git config -f $HOME/.gitconfig --global alias.st status
+git config -f $HOME/.gitconfig --global alias.ci commit
+git config -f $HOME/.gitconfig --global alias.co checkout
+git config -f $HOME/.gitconfig --global alias.br branch
+git config -f $HOME/.gitconfig --global alias.glog 'log --oneline --decorate'
 
-git config --global color.branch auto
-git config --global color.diff auto
-git config --global color.interactive auto
-git config --global color.status auto
+git config -f $HOME/.gitconfig --global color.branch auto
+git config -f $HOME/.gitconfig --global color.diff auto
+git config -f $HOME/.gitconfig --global color.interactive auto
+git config -f $HOME/.gitconfig --global color.status auto
