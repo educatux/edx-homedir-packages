@@ -1,18 +1,16 @@
 #! /bin/bash
 
-logger "$HOME/.gitconfig --- echo $USER -- $(pwd)"
+cd $HOME
+git config --global user.name "Stéphane GAUTIER"
+git config --global user.email educatux@gmail.com
 
+git config --global alias.st status
+git config --global alias.ci commit
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.glog 'log --oneline --decorate'
 
-git config -f $HOME/.gitconfig user.name "Stéphane GAUTIER"
-git config -f $HOME/.gitconfig user.email educatux@gmail.com
-
-git config -f $HOME/.gitconfig alias.st status
-git config -f $HOME/.gitconfig alias.ci commit
-git config -f $HOME/.gitconfig alias.co checkout
-git config -f $HOME/.gitconfig alias.br branch
-git config -f $HOME/.gitconfig alias.glog 'log --oneline --decorate'
-
-git config -f $HOME/.gitconfig color.branch auto
-git config -f $HOME/.gitconfig color.diff auto
-git config -f $HOME/.gitconfig color.interactive auto
-git config -f $HOME/.gitconfig color.status auto
+git config --global color.branch auto
+git config --global color.diff auto
+git config --global color.interactive auto
+git config --global color.status auto
