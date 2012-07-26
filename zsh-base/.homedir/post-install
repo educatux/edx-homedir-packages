@@ -7,7 +7,9 @@
 #echo
 #
 
-[[ "$SHELL" = "/bin/zsh" ]] || {
+
+grep $USER /etc/passwd | cut -d ':' -f 7 | grep zsh > /dev/null 2>&1 || {
+    echo
     read -s -p "Enter Password: " PASSWORD
     echo
     echo $PASSWORD | chsh -s /bin/zsh > /dev/null 2>&1
