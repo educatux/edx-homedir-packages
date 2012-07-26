@@ -1,5 +1,8 @@
 #! /bin/bash
 
+logger "$HOME/.gitconfig --- echo $USER -- $(pwd)"
+
+
 git config -f $HOME/.gitconfig user.name "Stéphane GAUTIER"
 git config -f $HOME/.gitconfig user.email educatux@gmail.com
 
