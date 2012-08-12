@@ -1,0 +1,10 @@
+#! /bin/bash
+
+sudo apt-get install task
+
+[[ "$HOSTNAME" = "jones" ]] && TASKS_DIR="$HOME/taskwarrior" || TASKS_DIR="/srv/users/$USER/taskwarrior"
+
+install -d ${TASKS_DIR}
+cd $HOME && ln -sf $TASKS_DIR .tasks > /dev/null 2>&1 | true
+
+exit
