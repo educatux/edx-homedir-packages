@@ -2,9 +2,12 @@
 
 sudo apt-get install task
 
-hostname | grep jones > /dev/null 2>&1 && TASKS_DIR="$HOME/taskwarrior" || TASKS_DIR="/srv/users/$USER/taskwarrior"
 
-install -d ${TASKS_DIR}
-cd $HOME && ln -sf $TASKS_DIR .task > /dev/null 2>&1 | true
+[ -d "$HOME/task" ] || {
+    hostname | grep jones > /dev/null 2>&1 && TASKS_DIR="$HOME/taskwarrior" || TASKS_DIR="/srv/users/$USER/taskwarrior"
 
-exit
+    install -d ${TASKS_DIR}
+    cd $HOME && ln -sf $TASKS_DIR .task > /dev/null 2>&1 | true
+}
+
+exit 0
