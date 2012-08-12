@@ -7,7 +7,4 @@
 #   variable=      -- By specifying no value, this means no default
 #   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
 
-# Files
-data.location=$HOME/.tasks
-
 include /usr/share/doc/task/rc/dark-blue-256.theme
