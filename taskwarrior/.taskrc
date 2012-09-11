@@ -8,3 +8,4 @@
 #   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
 
 include ~/.taskwarrior.theme
+report.long.dateformat=d/m/y
