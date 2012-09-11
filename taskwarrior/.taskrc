@@ -7,5 +7,11 @@
 #   variable=      -- By specifying no value, this means no default
 #   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
 
-include ~/.taskwarrior.theme
 dateformat=d/m/y
+dateformat.report=d/m/y
+dateformat.annotation=d/m/Y                   # Preferred display date format for reports
+weekstart=Monday                              # Sunday or Monday only
+displayweeknumber=yes                         # Show week numbers on calendar
+
+include ~/.taskwarrior.theme
+
