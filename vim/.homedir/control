@@ -18,6 +18,7 @@ dirs:
  .vim/syntax
  .vim/snippets
  .vim/spell
+ .vim/bash-support
 
 mkdirs:
  .vim
