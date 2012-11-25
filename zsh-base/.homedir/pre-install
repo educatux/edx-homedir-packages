@@ -1,0 +1,5 @@
+#! /bin/bash
+
+rm -f $HOME/.zcompdump $HOME/.zdir
+
+md5sum /etc/skel/.zshrc | awk '{print $1}' | grep "$(md5sum $HOME/.zshrc | awk '{print $1}')" > /dev/null 2>&1 && rm -f $HOME/.zshrc
