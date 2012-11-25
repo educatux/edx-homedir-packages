@@ -1,6 +1,8 @@
 #! /bin/bash
 
-grep -E "\.bin" $HOME/.profile 2> /dev/null 2>&1 && exit 0
+
+grep sgautier /etc/passwd | cut -d ":" -f 7 | grep zsh > /dev/null 2>&1 || {
+    grep -E "\.bin" $HOME/.profile 2> /dev/null 2>&1 && exit 0
 
 cat >> $HOME/.profile <<EOF
 
@@ -9,6 +11,7 @@ if [ -d "\$HOME/.bin" ] ; then
         PATH="\$HOME/.bin:\$PATH"
 fi
 EOF
+}
 
 if [ -e "$HOME/.zshenv" ] ; then
     grep -E "\.bin" $HOME/.zshenv 2> /dev/null 2>&1 && exit 0
