@@ -1,8 +1,5 @@
 #! /bin/bash
 
-sudo apt-get install task
-
-
 [ -d "$HOME/.task" ] || {
     hostname | grep jones > /dev/null 2>&1 && TASKS_DIR="$HOME/taskwarrior"
 

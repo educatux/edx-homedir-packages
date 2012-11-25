@@ -1,3 +1,0 @@
-#! /bin/bash
-
-dpkg -l | grep zsh > /dev/null 2>&1 || aptitude install zsh

@@ -1,6 +1,0 @@
-package: desktop-manager
-priority: normal
-maintainer: Stéphane GAUTIER <educatux@gmail.com>
-depends:
-standards-version: 1
-description: DM configuration files
