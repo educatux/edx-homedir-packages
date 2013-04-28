@@ -28,7 +28,7 @@ if [[ $(pgrep firefox) ]]; then
     exit 1
 else
     sudo iptables -D OUTPUT -d 192.168.100.25 -j REJECT 2> /dev/null
-    touch $HOME/.zotero_open
+    rm -f $HOME/.zotero_no_open && touch $HOME/.zotero_open
     sleep 15
     if [[ $(fping thorin.local >/dev/null 2>&1) ]]; then
         exit 0
