@@ -16,7 +16,7 @@ EOF
 }
 
 if [ -e "$HOME/.zshenv" ] ; then
-    grep -E "\.bin" $HOME/.zshenv 2> /dev/null 2>&1 && exit 0
+    grep -E "\.bin" $HOME/.zshenv > /dev/null 2>&1 && exit 0
 fi
 
 cat >> $HOME/.zshenv <<EOF
