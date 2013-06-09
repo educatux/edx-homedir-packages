@@ -32,16 +32,12 @@ sub message{
   my $tag = $_[0];
   my $title = $_[1];
   my $summary = $_[2];
-  if($tag eq 'weechat'){
-    # see if weechat has focus, if not, send notification.  Depends on terminal name starting with weechat
-    my $focus = `xwininfo -tree -id \$(xdpyinfo | awk '/focus/ {gsub(",", "", \$3); print \$3}') | grep Parent | awk -F\\" '{print \$2}'`;
-    if ($focus !~ /^weechat /){
-      $title =~ s/[<&]//g; # remove some characters that libnotify hates
-      $summary =~ s/[<&]//g;
-      my @args = ('/usr/bin/notify-send', $title, $summary, "--icon=$weechat_icon");
-      system @args;
+  if($tag eq 'mcabber'){
+    $title =~ s/[<&]//g; # remove some characters that libnotify hates
+    $summary =~ s/[<&]//g;
+    my @args = ('/usr/bin/notify-send', "--icon=/usr/share/pixmaps/gnome-cromagnon.png" , $title, $summary);
+    system @args;
     }
-  }
   if($tag eq 'system'){
     $title =~ s/[<&]//g; # remove some characters that libnotify hates
     $summary =~ s/[<&]//g;
