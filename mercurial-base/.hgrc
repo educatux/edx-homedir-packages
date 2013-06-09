@@ -12,3 +12,7 @@ hgext.graphlog =
 hgext.convert=
 hgext.bookmarks=
 # hgext.git =
+
+# http://www.logilab.org/blogentry/77976
+[hgview]
+interface = curses # or qt or raw
