@@ -1,8 +1,0 @@
-## Gestion de Xephyr
-alias sylvebarbe="Xephyr -query sylvebarbe -screen 1920x1080 -keybd ephyr,xkbrules=edev,xkbmodel=pc105,xkbvariant=latin9,xkblayout=fr -ac -dpi 92 :1 -terminate -fullscreen"
-alias haldir="Xephyr -query haldir -screen 1920x1080 -keybd ephyr,xkbrules=edev,xkbmodel=pc105,xkbvariant=latin9,xkblayout=fr -ac -dpi 92 :1 -terminate -fullscreen"
-alias merry="Xephyr -query merry -screen 1920x1080 -keybd ephyr,xkbrules=edev,xkbmodel=pc105,xkbvariant=latin9,xkblayout=fr -ac -dpi 92 :1 -terminate -fullscreen"
-
-## Icedove Over Lan
-alias icedove="ssh -X sylvebarbe icedove"
-

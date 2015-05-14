@@ -1,9 +1,0 @@
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-if [ -e "$HOME/.zsh_theme" ] ; then
-    ZSH_THEME="`cat $HOME/.zsh_theme`"
-else
-    ZSH_THEME="random"
-fi
